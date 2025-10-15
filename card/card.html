@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Player Card</title>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+            body {
+                display: flex;
+                justify-content: center; 
+                align-items: center;     
+                height: 90vh;
+            }
+
+            .fundo {
+                background-color: #d13683;
+                height: 780px;
+                width: 500px;
+            }
+            
+            .playercard {
+                display: flex;
+                position: relative;
+                background-color: #fa75b8;
+                border-radius: 30px;
+                height: 710px;
+                width: 450px;
+                left: 24px;
+                top: 35px;
+            }
+
+            #fonte1 {
+                color: #FFF0F5; 
+                position: relative;
+                font-family: 'Press Start 2P';
+                font-size: 25px;
+                left: 25px;
+                bottom: 70px;
+            }
+
+            #trofeu{
+                position: relative;
+                height: 90px;
+                width: 120px;
+                left: 310px;
+                top: 5px;
+            }
+
+            .missao {
+                position: relative;
+                background-color: #e94f98;
+                border-radius: 30px 30px 0 0;
+                height: 100px;
+                width: 800px;          
+            }
+
+            #fonte2 {
+                color: #FFF0F5;
+                position: relative;
+                text-align: center;
+                font-family: 'Press Start 2P';
+                font-size: 25px;
+                bottom: 40px;
+            }
+
+            #fonte3 {
+                color: #FFF0F5;
+                position: relative;
+                text-align: center;
+                font-family: 'Press Start 2P';
+                font-size: 35px;
+                bottom: 40px;
+            }
+
+            .infomacoes {
+                background-color: #FFF0F5;
+                position: relative;
+                height: 460px;                
+                bottom: 50px;
+            }
+
+            .barbie {
+                position: relative;
+                border-radius: 10px;
+                height: 150px;
+                width: 150px;
+                left: 40px;
+                top: 35px;                
+            }
+            
+            #imgbarbie {
+                position: relative;
+                height: 180px;
+                width: 190px;
+                right: 30px;
+                bottom: 10px;
+            }
+
+            #myimg {
+                position: relative;                
+                height: 150px;
+                right: 460px;
+                bottom: 476px;
+            }
+
+            .nome {
+                color: #e94f98;
+                position: relative;
+                font-family: 'VT323';
+                left: 215px;
+                bottom: 120px;
+            }
+            
+            .namebox {
+                background-color: #e94f98;
+                position: relative;
+                border-radius: 10px;
+                height: 30px;
+                width: 220px;
+                left: 215px;
+                bottom: 130px;
+            }
+            
+            .classe {
+                color: #e94f98;
+                position: relative;
+                font-family: 'VT323';
+                left: 215px;
+                bottom: 135px; 
+            }
+            
+            .classbox {
+                background-color: #e94f98;
+                position: relative;
+                border-radius: 10px;
+                height: 30px;
+                width: 220px;
+                left: 215px;
+                bottom: 145px;
+            }
+
+            #nome {
+                color: #FFF0F5;
+                position: relative;
+                font-family: 'VT323';
+                font-size: 30px;
+                left: 10px;   
+            }
+
+            .xp {
+                color: #e94f98;
+                position: relative;
+                font-family: 'Press Start 2P';
+                font-size: 20px;
+                left: 15px;
+                bottom: 115px;
+            }
+            
+            .fracao {
+                color: #e94f98;
+                position: relative;               
+                font-family: 'VT323';
+                font-size: 30px;
+                left: 350px;
+                bottom: 162px;  
+            }           
+            
+            .barra {
+                background-color: #2e2e2e;
+                position: relative;
+                border-radius: 8px;
+                height: 25px;
+                width: 420px;
+                left: 15px;
+                bottom: 180px;
+            }
+            
+            .barrarosa {
+                background-color: #e94f98;
+                position: relative;
+                border-radius: 8px 0 0 8px;
+                height: 25px;
+                width: 160px;
+            }
+                       
+            .conquistas {
+                color: #e94f98;
+                position: relative;
+                text-align: center;
+                font-family: 'VT323';
+                font-size: 30px;
+                letter-spacing: 5px;
+                left: 3px;
+                bottom: 170px;
+            }
+            
+            #imgconquistas {
+                position: relative;
+                height: 90px;
+                width: 390px;
+                left: 35px;
+                bottom: 190px;
+            }
+
+            button {
+                background-color: #d13683;
+                border: none;
+                position: relative;
+                height: 50px;
+                width: 50px;
+                left: 400px;
+                bottom: -365px;
+                color: #ffffff;
+                text-align: center;
+                font-size: 25px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="fundo">
+            <div class="playercard">
+                <div class="missao">
+                    <img src="medalha.png" id="trofeu">
+                    <h1 id="fonte1">PLAYER CARD</h1>
+                    <h2 id="fonte2">MISSÃO SEMESTRAL:</h2>
+                    <h1 id="fonte3">LEVEL UP!</h1>
+                    <div class="infomacoes">
+                        <div class="barbie">
+                            <img src="barbie.png" id="imgbarbie">
+                        </div>
+                        <h1 class="nome">NOME:</h1>
+                        <div class="namebox">
+                            <h1 id="nome">Barbie</h1>
+                        </div>
+                        <h1 class="classe">CLASSE:</h1>
+                        <div class="classbox">
+                            <h1 id="nome">FullStack</h1>
+                        </div>
+                        <h1 class="xp">XP</h1>
+                        <h1 class="fracao">120/300</h1>
+                        <div class="barra">
+                            <div class="barrarosa"></div>
+                        </div>
+                        <h1 class="conquistas">CONQUISTAS DESBLOQUEADAS:</h1>
+                        <img src="conquistas.png" id="imgconquistas">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button onclick="window.location.href='../html/0rigem.html'">></button>
+    </body>
+</html>
