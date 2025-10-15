@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>Inicio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/estilo.css">
+        
+        <style>
+            .mapa-barbie{
+                height: 100%;
+                width: 100%;
+            }
+            
+            button{
+                background-color: #e94f98;
+                color: #ffffff;
+                position: absolute;
+                border: none;
+                font-family: 'Chau Philomene One';
+                font-size: 35px;
+                height: 48px;
+                width: 85px;
+                top: 169px;
+            }
+            
+            #a1959 {left: 15px;}
+            #a1962 {left: 128px;}
+            #a1964 {left: 241px;}
+            #a1967 {left: 355px;}
+            #a1971 {left: 468px;}
+            #a1977 {left: 581px;}
+            #a1986 {left: 694px;}
+            #a1992 {left: 808px;}
+            #a1999 {left: 921px;}
+            #a2000 {left: 1034px;}
+            #a2010 {left: 1147px;}
+            #a2019 {left: 1261px;}
+
+            
+            #bottomback {
+                background-color: #d13683;
+                border: none;
+                position: relative;
+                height: 50px;
+                width: 50px;
+                left: -80px;
+                color: #ffffff;
+                text-align: center;
+                font-size: 25px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <img src="../mapa/mapa barbie.png" class="mapa-barbie">
+        
+        <button id="a1959" onclick="abrirPagina('1959.html')">1959</button>
+        <button id="a1962" onclick="abrirPagina('1962.html')">1962</button>
+        <button id="a1964" onclick="abrirPagina('1964.html')">1964</button>
+        <button id="a1967" onclick="abrirPagina('1967.html')">1967</button>
+        <button id="a1971" onclick="abrirPagina('1971.html')">1971</button>
+        <button id="a1977" onclick="abrirPagina('1977.html')">1977</button>
+        <button id="a1986" onclick="abrirPagina('1986.html')">1986</button>
+        <button id="a1992" onclick="abrirPagina('1992.html')">1992</button>
+        <button id="a1999" onclick="abrirPagina('1999.html')">1999</button>
+        <button id="a2000" onclick="abrirPagina('2000.html')">2000</button>
+        <button id="a2010" onclick="abrirPagina('2010.html')">2010</button>
+        <button id="a2019" onclick="abrirPagina('2019.html')">2019</button>
+        
+        <script>function abrirPagina(pagina) {window.location.href = pagina;}</script>
+
+        <button id="bottomback" onclick="window.location.href='../card/playercard.html'">></button>
+    </body>
+</html>
